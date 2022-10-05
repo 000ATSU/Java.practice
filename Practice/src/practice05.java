@@ -21,7 +21,7 @@ public class practice05 {
 		}
 		System.out.println("ここはfor文の外側");
 
-		int v = 101;
+		int v = 10;
 		while (v < 100) {
 			System.out.println("変数vは" + v + "です");
 			v++;
