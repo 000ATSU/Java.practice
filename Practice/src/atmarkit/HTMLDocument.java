@@ -1,6 +1,12 @@
+package atmarkit;
 
-class HTMLDocument {
+public class HTMLDocument {
 	String source;
+
+	public void setSource(String html) {
+		if (html.indexOf("<html>") == 0)
+			source = html;
+	}
 
 	public String getSource() {
 		return source;
@@ -66,14 +72,5 @@ class HTML32Document extends HTMLDocument {
 			}
 			processingTag = !processingTag;
 		}
-	}
-}
-
-public class practice07 {
-	public static void main(String[] args) {
-		HTML32Document doc = new HTML32Document();
-
-		doc.source = "<html>TEXT</html>";
-		doc.showPlainText();
 	}
 }
